@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MeliProductsSearcher" parent="Theme.Material3.Light.NoActionBar">
+         <item name="colorPrimary">@color/blueMercado</item>
+        <item name="android:statusBarColor">@color/cardview_yellow_background</item>
+    </style>
+
+    <style name="Theme.MeliProductsSearcher" parent="Base.Theme.MeliProductsSearcher" />
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.view.ProductViewFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/tv_productName"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="25sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            tools:text="Product Name" />
+
+        <ImageView
+            android:id="@+id/image_view_product"
+            app:layout_constraintTop_toBottomOf="@id/tv_productName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/product_example"
+            android:contentDescription="@string/product_image" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_view_product"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:textSize="30sp"
+            tools:text="$ 65235"/>
+
+        <TextView
+            android:id="@+id/tv_seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_price"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:textSize="25sp"
+            tools:text="OVERHARD DIGITAL"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            app:layout_constraintTop_toTopOf="@id/tv_seller"
+            app:layout_constraintBottom_toBottomOf="@id/tv_seller"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:isIndicator="true"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:stepSize="0.25"/>
+
+        <TextView
+            android:id="@+id/tv_availableQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_seller"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:textSize="20sp"
+            tools:text="3 disponibles"/>
+
+        <TextView
+            android:id="@+id/tv_soldQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_availableQuantity"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            style="@style/TextAppearance.AppCompat.Display2"
+            android:textSize="20sp"
+            tools:text="23 vendidos"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

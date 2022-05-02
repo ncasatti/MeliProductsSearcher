@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MeliProductsSearcher</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="search">Search</string>
+    <string name="product_image">Product Image</string>
+    <string name="buscador_de_productos">Buscador de productos</string>
+    <string name="no_se_encontraron_resultados">No se encontraron resultados</string>
+</resources>
